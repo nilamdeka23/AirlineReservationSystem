@@ -138,8 +138,8 @@ Follow this [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/
 ## Test framework used,
 Junit
 
-### Thank you note
-To enalbe HTTPS in SpringBoot, I had immense help following this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
+## Thank you note
+To enalbe HTTPS in Spring Boot, I had immense help following this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
 
 Also, Stackoverflow [thread](http://stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) was useful for time comparison.
     
