@@ -129,9 +129,9 @@ public class Plane {
 ![Alt Text](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf)
 
 ### Thank you note
-To enalbe HTTPS in SpringBoot, I followed this [link](drissamri.be/blog/java/enable-https-in-spring-boot/).
+To enalbe HTTPS in SpringBoot, I followed this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
 
-##### Other useful Stackoverflow [link](stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) for time comparison.
+##### Other useful Stackoverflow [link](http://stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) for time comparison.
     
 
 
