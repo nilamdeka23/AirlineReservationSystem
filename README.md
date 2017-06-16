@@ -1,5 +1,5 @@
 # Airline Reservation System
-A project to build **Restful APIs** to implement a simple  airline reservation system through database **CRUD** operations.
+A project to build **Restful APIs** to implement a simple  airline reservation system using **SpringBoot** and **Spring Data JPA** CRUD operations.
 
 The general requirements and constraints were as follows,
 * Each passenger can make one or more reservation. Time overlap is not allowed among any of his/her reservation.
@@ -132,12 +132,16 @@ public class Plane {
  
  > You can not delete a flight that has one or more reservation, in which case, the deletion should fail with error code 400.
 
-### Detailed API test screenshots can be found in a report file, at the [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf)
+## Request/Response
+Follow this [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf) to view a detailed report on the exposed services.
+
+## Test framework used,
+Junit
 
 ### Thank you note
-To enalbe HTTPS in SpringBoot, I followed this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
+To enalbe HTTPS in SpringBoot, I had immense help following this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
 
-##### Useful Stackoverflow [thread](http://stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) for time comparison.
+Also, Stackoverflow [thread](http://stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) was useful for time comparison.
     
 
 
