@@ -10,6 +10,10 @@ The general requirements and constraints were as follows,
 * When a passenger is deleted, all reservation made by him/her are automatically cancelled.
 * A flight can not be deleted if it needs to carry at least one passenger.
 
+Additional requirements,
+* All these operations should be transactional.
+* Must use JPA for persistence.
+* This system needs to be hosted on the cloud.
 
 Incomplete  definitions of passenger, reservation, flight and plane were given as below,
 ```java
