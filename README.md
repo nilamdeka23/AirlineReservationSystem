@@ -1,5 +1,5 @@
 # Airline Reservation System
-A project to build **Restful APIs** to implement a simple  airline reservation system using **SpringBoot** and **Spring Data JPA** CRUD operations.
+A project to build **Restful APIs** to implement a simple  airline reservation system using **Spring Boot** and **Spring Data JPA** CRUD operations.
 
 The general requirements and constraints were as follows,
 * Each passenger can make one or more reservation. Time overlap is not allowed among any of his/her reservation.
