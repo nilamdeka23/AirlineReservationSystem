@@ -61,15 +61,15 @@ public class Plane {
 ### API description
  1. Get a passenger back as JSON
  ######
- ###### Note: This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+     > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
  2. Get a passenger back as XML
  ######
- ###### Note: This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+     > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
  3. Create a passenger
  ######
      > This request creates a passenger’s record in the system. 
      > For simplicity, all the passenger's fields including the phone number(firstname, lastname, age, and gender) are passed as query parameters, and it is assumed the request always comes with all the fields specified.
-    > The uniqueness of phone numbers is enforced.
+     > The uniqueness of phone numbers is enforced.
  4. Update a passenger
  ######
      > This request updates a passenger’s record in the system.
@@ -103,8 +103,10 @@ public class Plane {
      > It updates the number of available seats for the involved flight.
  11. Get a flight back as JSON
  ######
+     > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
  12. Get a flight back as XML
  ######
+     > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
  13. Create or update a flight
  ######
      > This request creates/updates a new flight for the system.
