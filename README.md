@@ -126,10 +126,10 @@ public class Plane {
      > You can not delete a flight that has one or more reservation, in which case, the deletion should fail with error code 400.
 
 ### Detailed API test screenshots can be found in report file, in the link below,
-![Alt Text]()
+![Alt Text](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf)
 
 ### Thank you note
-To enalbe HTTPS in SpringBoot, I followed this[link](drissamri.be/blog/java/enable-https-in-spring-boot/).
+To enalbe HTTPS in SpringBoot, I followed this [link](drissamri.be/blog/java/enable-https-in-spring-boot/).
 
 ##### Other useful Stackoverflow [link](stackoverflow.com/questions/24497809/compare-intervals-jodatime-in-alist-for-overlap) for time comparison.
     
