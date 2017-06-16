@@ -62,68 +62,55 @@ public class Plane {
 ```
 ###### Note: For simplicity, no authentication or authorization is enforced for these requests.
 
-### API description
- 1. Get a passenger back as JSON
- ######
-     > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
- 2. Get a passenger back as XML
- ######
-     > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
- 3. Create a passenger
- ######
-     > This request creates a passenger’s record in the system. 
-     > For simplicity, all the passenger's fields including the phone number(firstname, lastname, age, and gender) are passed as query parameters, and it is assumed the request always comes with all the fields specified.
-     > The uniqueness of phone numbers is enforced.
- 4. Update a passenger
- ######
-     > This request updates a passenger’s record in the system.
-     > For simplicity, all the passenger's fields including the phone number(firstname, lastname, age, and gender) are passed as query parameters, and it is assumed the request always comes with all the fields specified.
- 5. Delete a passenger
- ######
-     > This request deletes the user with the given user ID.
-     > The reservation made by the passenger is also deleted.
-     > It updates the number of available seats for the involved flights.
- 6. Get a reservation back as JSON
- ######
- 7. Make a reservation
- ######
-     > This request makes a reservation for a passenger.
-     > Time-Overlap is not allowed for a certain passenger.
-     > The total amount of passengers can not exceed the capacity of the reserved plane.
-     > Receives a list of flights as input.
- 8. Update a reservation 
- ######
-     > This request update a reservation by adding and/or removing some flights.
-     > If flightsAdded (or flightsRemoved) param exists, then its list of values cannot be empty.
-     > If both additions and removals exist, the non-overlapping constraint considers the flights to be removed.
-     > Update a reservation triggers a recalculation of its total price by summing up the price of each contained flight.    
- 9. Search for reservations
- ######
-     > This request allow to search for reservations by any combination of single passenger ID, departing city, arrival city, and flight number.
-     > It assumes that at least one request parameter is specified.
- 10. Cancel a reservation
- ######
-     > This request cancel a reservation for a passenger.
-     > It updates the number of available seats for the involved flight.
- 11. Get a flight back as JSON
- ######
-     > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
- 12. Get a flight back as XML
- ######
-     > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
- 13. Create or update a flight
- ######
-     > This request creates/updates a new flight for the system.
-     > For simplicity, all the fields are passed as query parameters, and it assunes the request always comes with all the fields specified.
-     > The corresponding flight is created/updated accordingly.
-     > Updates the seatsLeft when capacity is modified.
-     > When attempting to reduce the existing capacity of a flight, the request fails with error code 400 if active reservation count for this flight is higher than the target capacity.
-     > If change of a flight’s departure and/or arrival time causes a passenger to have overlapping flight time , this update cannot proceed and hence fails with error code 400.
-     > Changing the price of a flight will not affect the total price of existing reservations.
- 14. Delete a flight
- ######
-     > This request deletes the flight for the given flight number.
-     > You can not delete a flight that has one or more reservation, in which case, the deletion should fail with error code 400.
+## API description
+#### 1. Get a passenger back as JSON
+ > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+#### 2. Get a passenger back as XML
+ > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+#### 3. Create a passenger
+ > This request creates a passenger’s record in the system. 
+ > For simplicity, all the passenger's fields including the phone number(firstname, lastname, age, and gender) are passed as query parameters, and it is assumed the request always comes with all the fields specified.
+ > The uniqueness of phone numbers is enforced.
+#### 4. Update a passenger
+ > This request updates a passenger’s record in the system.
+ > For simplicity, all the passenger's fields including the phone number(firstname, lastname, age, and gender) are passed as query parameters, and it is assumed the request always comes with all the fields specified.
+#### 5. Delete a passenger
+ > This request deletes the user with the given user ID.
+ > The reservation made by the passenger is also deleted.
+ > It updates the number of available seats for the involved flights.
+#### 6. Get a reservation back as JSON
+ 
+#### 7. Make a reservation
+ > This request makes a reservation for a passenger.
+ > Time-Overlap is not allowed for a certain passenger.
+ > The total amount of passengers can not exceed the capacity of the reserved plane.
+ > Receives a list of flights as input.
+#### 8. Update a reservation 
+ > This request update a reservation by adding and/or removing some flights.
+ > If flightsAdded (or flightsRemoved) param exists, then its list of values cannot be empty.
+ > If both additions and removals exist, the non-overlapping constraint considers the flights to be removed.
+ > Update a reservation triggers a recalculation of its total price by summing up the price of each contained flight.    
+#### 9. Search for reservations
+ > This request allow to search for reservations by any combination of single passenger ID, departing city, arrival city, and flight number.
+ > It assumes that at least one request parameter is specified.
+#### 10. Cancel a reservation
+ > This request cancel a reservation for a passenger.
+ > It updates the number of available seats for the involved flight.
+#### 11. Get a flight back as JSON
+ > This JSON is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+#### 12. Get a flight back as XML
+ > This XML is meant for consumption of APIs, and may not render well in browsers unless extensions/plugs are installed.
+#### 13. Create or update a flight
+ > This request creates/updates a new flight for the system.
+ > For simplicity, all the fields are passed as query parameters, and it assunes the request always comes with all the fields specified.
+ > The corresponding flight is created/updated accordingly.
+ > Updates the seatsLeft when capacity is modified.
+ > When attempting to reduce the existing capacity of a flight, the request fails with error code 400 if active reservation count for this flight is higher than the target capacity.
+ > If change of a flight’s departure and/or arrival time causes a passenger to have overlapping flight time , this update cannot proceed and hence fails with error code 400.
+ > Changing the price of a flight will not affect the total price of existing reservations.
+#### 14. Delete a flight
+ > This request deletes the flight for the given flight number.
+ > You can not delete a flight that has one or more reservation, in which case, the deletion should fail with error code 400.
 
 ### Detailed API test screenshots can be found in a report file, at the [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf)
 
