@@ -141,7 +141,7 @@ Follow this [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/
 ![Alt Text](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/lab2.gif)
 
 ## Test framework
-#### Junit
+Junit
 
 ## Thank you note
 To enalbe HTTPS in Spring Boot, I had immense help following this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
