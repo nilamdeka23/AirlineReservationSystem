@@ -135,8 +135,13 @@ public class Plane {
 ## Request/Response
 Follow this [link](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/report.pdf) to view a detailed report on the exposed services.
 
-## Test framework used,
-Junit
+## Cloud Deployment Steps
+#### Technology chosen: Amazon Web Services(AWS).
+##### Note: Prior to following the below steps, don't forget to set up your EC2 instance with Java Runtime Env(JRE) with 1.8 and MySQL. Also, open the port 8443 for the incoming requests from the Security Group of your instance.
+![Alt Text](https://github.com/nilamdeka23/AirlineReservationSystem/blob/master/lab2.gif)
+
+## Test framework
+#### Junit
 
 ## Thank you note
 To enalbe HTTPS in Spring Boot, I had immense help following this [link](http://drissamri.be/blog/java/enable-https-in-spring-boot/).
