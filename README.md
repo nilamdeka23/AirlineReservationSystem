@@ -1,5 +1,5 @@
 # Airline Reservation System
-A project to build **Restful APIs** to implement a simple  airline reservation system using **Spring Boot** and **Spring Data JPA** CRUD operations.
+A project to build **RESTful APIs** to implement a simple  airline reservation system using **Spring Boot** and **Spring Data JPA** CRUD operations.
 
 You can read this Spring guide on how to build a [RESTful Web Service](https://spring.io/guides/gs/rest-service/). 
 
